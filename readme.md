@@ -3,7 +3,6 @@
 
 These tracer data were collected during a fall training school about isotopic tracer and labelling experiments, as part of the COST Action WATSON. The training school took place near Florence, Italy, between 12-14 September 2023.
 
-**(ADD A LICENCE and HOW TO USE THE DATA)**
 
 ## Experiment Design and Chronology
 
@@ -11,7 +10,7 @@ The main idea behind the experiment was to apply labeled water on top of a soil 
 
 We considered a plot of 3 m<sup>2</sup> (square of 1.75 m x 1.75 m) at the Training School venue ([see on Google Map](https://maps.app.goo.gl/LWNWN5TZWTygcvvv9)). The plot had a very mild south-facing slope.
  
-We used 3 tracers:
+We used 3 tracers to label the water:
 - **Brilliant Blue dye**, to visually see the spatial distribution of the tracer
 - **NaCl**, to measure the resulting pulse in Electrical Conductivity (EC) through EC sensors that measure at high temporal resolution
 - **Deuterium**, to see the tracer in soil profiles analysed for their water isotope composition
@@ -37,7 +36,7 @@ On Sep 13 2023 between 18:30 and 20:45 we applied another 28 mm of tap water <u>
 
 ![](DyeImageData/TransectsScheme.png)
 
-We excavated 4 transects and collected 2 pictures (a and b) from each of them. More details are in the [DyeImageData](DyeImageData) folder
+We excavated 4 transects and collected 2 pictures (a and b) from each of them. More details are in the [DyeImageData](DyeImageData) folder.
 
 ### NaCl 
 
@@ -48,17 +47,17 @@ We measured the pulse in EC at 9 locations:
 - 'Middle' side at depths 10 cm, 20 cm, 30 cm, 40 cm 
 - 'Right' side at depths 10 cm and 20 cm
 
-More details are in the [ECSensorData](ECSensorData) folder
+More details are in the [ECSensorData](ECSensorData) folder.
 
 ### Deuterium
 
 ![](IsotopeSampleData/cores_scheme.png)
 
-We colleced soil profiles in 5 different days from 2 profiles each day (total 10 profiles). Profiles A and B were collected before the tracer was applied, to evaluate the background condition. Bulk soil samples were analysed using the Direct Vapor Equilibratin method at the University of Braunschweig. 
+We colleced soil profiles in 5 different days from 2 profiles each day (total 10 profiles). Profiles A-B were collected before the tracer was applied, to evaluate the background condition. Profiles C-D were collected the day after the tracer application, profiles E-F after another day (after the second, unlabeled irrigation), profiles G-H and I-J were collected after about 1 and 2 weeks respectively. The Bulk soil samples were analysed using the Direct Vapor Equilibratin method at the University of Braunschweig. 
 
-More details are in the [IsotopeSampleData](IsotopeSampleData) folder
+More details are in the [IsotopeSampleData](IsotopeSampleData) folder.
 	
-### Summary image
+### Summary scheme
 
 The image below shows the tracer application area from the top and identifies the different measurement locations.
 
