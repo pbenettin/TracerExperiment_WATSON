@@ -1,0 +1,58 @@
+Pcp_File_Version=4
+* METEOROLOGICAL PARAMETERS AND INFORMATION |||||||||||||||||||||||||||||||
+ MeteoRecords Radiation Penman-Hargreaves
+           30        0       t
+  lEnBal  lDaily  lDummy  lDummy  lDummy  lDummy  lDummy  lDummy  lDummy  lDummy
+       f       f       f       f       f       t       f       f       f       f
+ Latitude  Altitude
+       40        110
+ ShortWaveRadA  ShortWaveRadB
+          0.25            0.5
+ LongWaveRadA   LongWaveRadB
+           0.9            0.1
+ LongWaveRadA1  LongWaveRadB1
+          0.34         -0.139
+ WindHeight     TempHeight
+        200            200
+ iCrop (=0: no crop, =1: constant, =2: table, =3: daily)  SunShine  RelativeHum
+         1                                                0         0
+ iLai (=0: given, =1: grass, =2; alfalfa, =3: surface fraction)  rExtinct
+    0                                                              0.463
+ Interception
+    0
+CropHeight     Albedo        LAI      rRoot
+        30       0.23          0         30
+Daily values
+       t        Rad        TMax        TMin     RHMean      Wind    SunHours CropHeight     Albedo   LAI(SCF)      rRoot
+      [T]  [MJ/m2/d]       [C]         [C]       [%]     [km/d]     [hour]      [L]           [-]        [-]        [L]
+       254          0       31.6         16          0          0          0 
+       255          0       29.3       15.3          0          0          0 
+       256          0         27       15.8          0          0          0 
+       257          0         27       16.5          0          0          0 
+       258          0       27.6       16.9          0          0          0 
+       259          0       27.9       15.7          0          0          0 
+       260          0       29.2       16.2          0          0          0 
+       261          0       28.6       17.2          0          0          0 
+       262          0       28.2       18.4          0          0          0 
+       263          0       24.8       15.5          0          0          0 
+       264          0       25.6       16.2          0          0          0 
+       265          0       25.3       18.1          0          0          0 
+       266          0       22.3       13.5          0          0          0 
+       267          0       21.6       13.6          0          0          0 
+       268          0       22.6       13.5          0          0          0 
+       269          0       25.2       17.2          0          0          0 
+       270          0       26.7       18.4          0          0          0 
+       271          0       28.2       18.4          0          0          0 
+       272          0       28.4       13.3          0          0          0 
+       273          0       29.5         12          0          0          0 
+       274          0       30.4       13.4          0          0          0 
+       275          0       30.9       14.2          0          0          0 
+       276          0         27       13.8          0          0          0 
+       277          0         26       12.6          0          0          0 
+       278          0       26.9       16.6          0          0          0 
+       279          0       26.9       15.5          0          0          0 
+       280          0       26.3       13.1          0          0          0 
+       281          0       26.8       14.8          0          0          0 
+       282          0       24.7       14.9          0          0          0 
+       283          0       24.5       15.4          0          0          0 
+end *** END OF INPUT FILE 'METEO.IN' **********************************
