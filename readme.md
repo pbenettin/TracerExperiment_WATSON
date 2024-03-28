@@ -37,9 +37,13 @@ On Sep 13 2023 between 17:30 and 19:45 UTC+01 we applied another 28 mm of tap wa
 
 ## Measurement strategy
 
+The image below shows the tracer application area from the top and identifies the different measurement locations. The individual measurement strategies are described below.
+
+![](MeasurementSummary.jpg)
+
 ### Brilliant Blue Dye data
 
-We excavated 4 transects and collected 2 pictures (a and b) from each of them. 
+We excavated 4 transects and collected 2 pictures (Left and Right) from each of them. 
 
 ![](DyeImageData/TransectsScheme.png)
 
@@ -72,8 +76,3 @@ The Bulk soil samples were analysed using the Direct Vapor Equilibration method 
 
 The data and additional details are in the [IsotopeSampleData](IsotopeSampleData) folder.
 	
-### Summary scheme
-
-The image below shows the tracer application area from the top and identifies the different measurement locations.
-
-![](MeasurementSummary.jpg)
