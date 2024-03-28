@@ -22,7 +22,7 @@ We used 3 tracers to label the water:
 
 ## Irrigation 1 
 
-On Sep 12 2023, between 16:40 and 19:00 UTC+01 we applied the three tracers together in a single irrigation (80 liters / 27 mm of tap water) using manual sprayers.
+On Sep 12 2023, between 16:40 and 19:00 UTC+01 we applied the three tracers together in a single irrigation of 80 liters (i.e. 27 mm) of tap water using manual sprayers.
 
 The applied water was labeled with:
 - 4 g/l of Brilliant Blue dye
@@ -52,9 +52,9 @@ The data and additional details are in the [DyeImageData](DyeImageData) folder.
 ### NaCl data
 
 We measured the pulse in EC at 9 locations:
-- 'Left' side, at depths 10 cm, 20 cm and 30 cm  
-- 'Middle' side at depths 10 cm, 20 cm, 30 cm, 40 cm 
-- 'Right' side at depths 10 cm and 20 cm
+- Left (L) side, at depths 10 cm, 20 cm and 30 cm  
+- Middle (M) side at depths 10 cm, 20 cm, 30 cm, 40 cm 
+- Right (R) side at depths 10 cm and 20 cm
 
 ![](ECSensorData/SensorsScheme.png)
 
@@ -76,3 +76,25 @@ The Bulk soil samples were analysed using the Direct Vapor Equilibration method 
 
 The data and additional details are in the [IsotopeSampleData](IsotopeSampleData) folder.
 	
+
+## Results
+
+A description of the results is available as jupyter notebook or html document within each data folder. A quick example of some results is given below.
+
+### Example of dye image
+
+Dye detection for one slice along with the distribution of dye coverage at each depth.
+
+![](DyeImageData/Slice_2R.png)
+
+### Example of conductivity (NaCl) breakthrough
+
+Breakthrough curves in electrical conductivity measured at the different sensor locations after the 2 tracer applications.
+
+![](ECSensorData/EC_BTC.png)
+
+### Example of deuterium profiles
+
+Deuterium composition of soil water collected from the different soil cores
+
+![](IsotopeSampleData/d2H_profiles.png)
