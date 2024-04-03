@@ -10,9 +10,6 @@ The photos of slice 4L and 4R were taken on Sept. 14, the morning after the seco
 
 ## Processed Data
 
-Processed data were obtained by using the the code provided in "image_analysis_for_python3_adapted_new_v2.py" and running it in PyCharm.
-A step-by-step explanation is provided in the PDF "Blue dye step by step instructions with screenshots.pdf"
-
-The individual processed slice data are provided as 2D images named "sliceXX_data.txt", where XX goes from 1L to 4R (see slice scheme in figure TransectsScheme.png). The pixel size in each image is 1x1 cm. Rows indicate depth and columns indicate the lateral extent of the slice (rightward distance from the left side of the slice). Pixels can either take a value of 1 (presence of dye) or 0 (absence of dye).
+We processed the photos through code provided by the University of Zurich, which rectifies and crops the images and classifies each pixel with values of 1 (presence of dye) or 0 (absence of dye). The code only detects dye presence/absence and does not separate different color intensities. The pixel size corresponds to 1 mm. Rows indicate depth and columns indicate the lateral extent of the slice (rightward distance from the left side of the slice). The processed files are named as "sliceXX_data.txt", where XX goes from 1L to 4R (see slice scheme in figure TransectsScheme.png). 
 
 For each slice, we also provide a summary table with the distribution of tracer presence at each depth. This was obtained by counting at each depth the number of pixels that contained tracer. 

@@ -54,19 +54,19 @@ H040,23/09/2023,15:30,H,30,40,17.23,-4.02,
 H050,23/09/2023,15:30,H,40,50,-16.22,-5.21,
 H060,23/09/2023,15:30,H,50,60,-26.85,-6.13,
 H070,23/09/2023,15:30,H,60,70,-30.49,-6.38,
-I010,,,I,0,10,110.11,-1.8,sample remained in the bag for 4 weeks before analysis
-I020,,,I,10,20,55.28,-4.01,sample remained in the bag for 4 weeks before analysis
-I030,,,I,20,30,-2.62,-5.09,sample remained in the bag for 4 weeks before analysis
-I040,,,I,30,40,-21.74,-5.38,sample remained in the bag for 4 weeks before analysis
-I050,,,I,40,50,-33.62,-6.67,sample remained in the bag for 4 weeks before analysis
-I060,,,I,50,60,-42,-7.11,sample remained in the bag for 4 weeks before analysis
-I070,,,I,60,70,-13.05,-5.24,sample remained in the bag for 4 weeks before analysis
-J010,,,J,0,10,101.63,-0.97,sample remained in the bag for 4 weeks before analysis
-J020,,,J,10,20,62.54,-3.74,sample remained in the bag for 4 weeks before analysis
-J030,,,J,20,30,35.01,-4.34,sample remained in the bag for 4 weeks before analysis
-J040,,,J,30,40,-4.09,-5.27,sample remained in the bag for 4 weeks before analysis
-J050,,,J,40,50,-21.85,-5.89,sample remained in the bag for 4 weeks before analysis
-J060,,,J,50,60,-29.61,-6.4,sample remained in the bag for 4 weeks before analysis
-J070,,,J,60,70,-30.76,-5.96,sample remained in the bag for 4 weeks before analysis
+I010,01/10/2023,10:00,I,0,10,110.11,-1.8,sample remained in the bag for 4 weeks before analysis
+I020,01/10/2023,10:00,I,10,20,55.28,-4.01,sample remained in the bag for 4 weeks before analysis
+I030,01/10/2023,10:00,I,20,30,-2.62,-5.09,sample remained in the bag for 4 weeks before analysis
+I040,01/10/2023,10:00,I,30,40,-21.74,-5.38,sample remained in the bag for 4 weeks before analysis
+I050,01/10/2023,10:00,I,40,50,-33.62,-6.67,sample remained in the bag for 4 weeks before analysis
+I060,01/10/2023,10:00,I,50,60,-42,-7.11,sample remained in the bag for 4 weeks before analysis
+I070,01/10/2023,10:00,I,60,70,-13.05,-5.24,sample remained in the bag for 4 weeks before analysis
+J010,01/10/2023,10:00,J,0,10,101.63,-0.97,sample remained in the bag for 4 weeks before analysis
+J020,01/10/2023,10:00,J,10,20,62.54,-3.74,sample remained in the bag for 4 weeks before analysis
+J030,01/10/2023,10:00,J,20,30,35.01,-4.34,sample remained in the bag for 4 weeks before analysis
+J040,01/10/2023,10:00,J,30,40,-4.09,-5.27,sample remained in the bag for 4 weeks before analysis
+J050,01/10/2023,10:00,J,40,50,-21.85,-5.89,sample remained in the bag for 4 weeks before analysis
+J060,01/10/2023,10:00,J,50,60,-29.61,-6.4,sample remained in the bag for 4 weeks before analysis
+J070,01/10/2023,10:00,J,60,70,-30.76,-5.96,sample remained in the bag for 4 weeks before analysis
 TAP,12/09/2023,17:00,,,,-35.23,-5.28,tap water sample
 INPUT,12/09/2023,17:00,,,,393.36,-5.27,input water sample

@@ -62,7 +62,7 @@ Each probe also measured volumetric water content and temperature. The data and 
 
 ### Deuterium data
 
-We colleced soil profiles in 5 different days from 2 profiles each day (total 10 profiles): 
+We collected soil profiles over 5 different days, from 2 profiles each day (total 10 profiles): 
 
 - Profiles A-B were collected before the tracer was applied, to evaluate the background condition
 - Profiles C-D were collected the day after the tracer application 
@@ -70,7 +70,7 @@ We colleced soil profiles in 5 different days from 2 profiles each day (total 10
 - profiles G-H were collected after 11 days
 - profiles I-J were collected after 19 days 
 
-The Bulk soil samples were analysed using the Direct Vapor Equilibration method at the University of Braunschweig by the group ot Matthias Beyer. 
+The Bulk soil samples were analysed using the Direct Vapor Equilibration method at the University of Braunschweig, by the group ot Matthias Beyer. 
 
 ![](IsotopeSampleData/cores_scheme.png)
 
@@ -79,7 +79,7 @@ The data and additional details are in the [IsotopeSampleData](IsotopeSampleData
 
 ## Results
 
-A description of the results is available as jupyter notebook or html document within each data folder. A quick example of some results is given below.
+A description of the results is available as a jupyter notebook and as html document within each data folder. A quick example of some results is given below.
 
 ### Example of dye image
 
