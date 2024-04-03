@@ -1,12 +1,12 @@
 # WATSON Soil Tracer Experiment Data
 
-This repository includes tracer data from a soil multi-tracer experiment carried out on a single soil plot of 3 m<sup>2</sup>. The data include:
+This repository includes tracer data from a multi-tracer experiment carried out on a single soil plot of 3 m<sup>2</sup>. The data include:
 
 - Images of brilliant blue dye from 4 soil transects ([DyeImageData](DyeImageData) folder)
-- Timeseries of electrical conductivity, temperature and volumetric water content measured through 9 soil water probes ([ECSensorData](ECSensorData) folder)
+- Timeseries of electrical conductivity, temperature and volumetric water content measured through 9 soil moisture probes ([ECSensorData](ECSensorData) folder)
 - Isotope composition of 10 soil cores ([IsotopeSampleData](IsotopeSampleData) folder)
 
-These tracer data were collected during a fall training school about isotopic tracer and labelling experiments, as part of the COST Action WATSON. The training school took place near Florence, Italy, between 12-14 September 2023.
+These tracer data were collected during a training school on isotopic tracer and labelling experiments, organized as part of the COST Action WATSON. The training school took place near Florence, Italy, between 12-14 September 2023.
 
 
 ## Experiment Design and Chronology
@@ -16,7 +16,7 @@ The main idea behind the experiment was to apply labeled water on top of a soil 
 We considered a plot of 3 m<sup>2</sup> (square of 1.75 m x 1.75 m) at the Training School venue ([see on Google Map](https://maps.app.goo.gl/LWNWN5TZWTygcvvv9)). The plot was basically flat, with just a very mild south-facing slope.
  
 We used 3 tracers to label the water:
-- **Brilliant Blue dye**, to visually see the spatial distribution of the tracer along transects
+- **Brilliant Blue dye**, to visually see the spatial distribution of the tracer
 - **NaCl**, to measure the resulting pulse in Electrical Conductivity (EC) through EC sensors that measure at high temporal resolution
 - **Deuterium**, to see the tracer in soil profiles analysed for their water isotope composition
 
@@ -37,13 +37,13 @@ On Sep 13 2023 between 17:30 and 19:45 UTC+01 we applied another 28 mm of tap wa
 
 ## Measurement strategy
 
-The image below shows the tracer application area from the top and identifies the different measurement locations. The individual measurement strategies are described below.
+The image below shows the tracer application area from the top and identifies the different measurement locations. The individual measurements are described below.
 
 ![](MeasurementSummary.jpg)
 
 ### Brilliant Blue Dye data
 
-We excavated 4 transects and collected 2 pictures (Left and Right) from each of them. 
+We excavated 4 transects and took 2 pictures (Left and Right) from each of them. 
 
 ![](DyeImageData/TransectsScheme.png)
 
@@ -60,9 +60,9 @@ We measured the pulse in EC at 9 locations:
 
 Each probe also measured volumetric water content and temperature. The data and additional details are in the [ECSensorData](ECSensorData) folder.
 
-### Deuterium data
+### Isotope data
 
-We collected soil profiles over 5 different days, from 2 profiles each day (total 10 profiles): 
+We collected soil samples on 5 different days, from 2 profiles each day (total 10 profiles): 
 
 - Profiles A-B were collected before the tracer was applied, to evaluate the background condition
 - Profiles C-D were collected the day after the tracer application 
@@ -70,7 +70,7 @@ We collected soil profiles over 5 different days, from 2 profiles each day (tota
 - profiles G-H were collected after 11 days
 - profiles I-J were collected after 19 days 
 
-The Bulk soil samples were analysed using the Direct Vapor Equilibration method at the University of Braunschweig, by the group ot Matthias Beyer. 
+The bulk soil samples were analysed using the Direct Vapor Equilibration method at the University of Braunschweig, by the group ot Matthias Beyer. 
 
 ![](IsotopeSampleData/cores_scheme.png)
 
@@ -79,7 +79,7 @@ The data and additional details are in the [IsotopeSampleData](IsotopeSampleData
 
 ## Results
 
-A description of the results is available as a jupyter notebook and as html document within each data folder. A quick example of some results is given below.
+A description of the results is available as a jupyter notebook and as html document within each data folder. An example of some results is given below.
 
 ### Example of dye image
 
@@ -93,8 +93,15 @@ Breakthrough curves in electrical conductivity measured at the different sensor 
 
 ![](ECSensorData/EC_BTC.png)
 
-### Example of deuterium profiles
+### Example of deuterium in soil profiles
 
-Deuterium composition of soil water collected from the different soil cores
+Deuterium composition ($\delta ^{2}\textrm{H}$) of soil water collected from the different soil cores and the irrigation water
 
 ![](IsotopeSampleData/d2H_profiles.png)
+
+## License
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
