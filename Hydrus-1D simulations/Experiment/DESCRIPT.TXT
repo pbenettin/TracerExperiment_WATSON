@@ -1,2 +1,0 @@
-Pcp_File_Version=1
-Stable water isotopes, lysimeter study, final version
