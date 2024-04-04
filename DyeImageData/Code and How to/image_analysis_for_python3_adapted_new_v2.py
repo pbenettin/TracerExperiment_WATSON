@@ -1,5 +1,5 @@
 ###############################################################################
-# Fluorescent Sand Extraction
+# Blue Dye Extraction
 ###############################################################################
 ##
 ## Authors: Florian Lustenberger & Marc Vis
@@ -124,16 +124,13 @@ def onclick(event):
 
 
 
-#pfad="C:/Users/meyer/Documents/BlueDyeScript"
-pfad=r"C:\Users\msprenger\Dropbox\Work\Daniele Penna\COST Action\Workshop 2023"
+
+pfad=r"path/to/folder"
 datei="Slice 3_R"
 ext=".JPG"
 
 bild_02=os.path.join(pfad, datei + "_bearb" + ext)
 bild_03=os.path.join(pfad, datei + "_klassifiziert" + ext)
-
-density_y=os.path.join(pfad, datei + "_sanddensity-curve_y" + ".png")
-density_x=os.path.join(pfad, datei + "_sanddensity-curve_x" + ".png")
 
 data_rowtots=os.path.join(pfad, datei + "_rowtots" + ".txt")
 data_matrix=os.path.join(pfad, datei + "_data" + ".txt")
@@ -210,9 +207,6 @@ if np.size(unew)>3:
     koo_y=koo_y.astype(int)*y_f
     koo_x=koo_x.astype(int)
     koo_y=koo_y.astype(int)
-
-#    from scipy.misc import imresize
-#    imx=imresize(im1,[int(y*y_f),int(x*x_f)])
 
     from skimage.transform import resize
     imx=resize(im1,[int(y*y_f),int(x*x_f)])
@@ -302,12 +296,6 @@ if nw_pnt==True:
 ###############################################################################
 ## image converstion from rgb to hsv
 ###############################################################################
-# try to rotate im3 (cropped image) outside of python then read back in as im3
-# won't work because the scale along the side is saved as part of the image
-#im3=plt.imread(os.path.join(pfad, "Rotated" + ".jpg"))
-
-## use rgb
-#r, g, b=im5[:,:,0],im5[:,:,1],im5[:,:,2]
 
 im4=rgb_to_hsv(im3)
 im4[:,:,2]=rgb_to_hsv(im3/255.)[:,:,2]
@@ -318,18 +306,8 @@ hue=hue*360
 hue_copy=np.copy(hue)
 val_copy=np.copy(val)
 
-# plot hue histogram
-#hist, bin_edges = np.histogram(hue, bins=360)
-#bin_centers = 0.5*(bin_edges[:-1] + bin_edges[1:])
-#plt.plot(bin_centers,hist,lw=1)
-#plt.xlabel('hue [°]')
-#plt.ylabel('number of pixels')
-#plt.ylim(0,50000)
-#plt.xlim(0,360)
-#plt.show()
-
 ###############################################################################
-# suppervised sand classification/detection
+# supervised dye classification/detection
 ###############################################################################
 
 grnz=True
@@ -357,21 +335,12 @@ while grnz:
     #print(class0)
     rowtots=class0.sum(axis=1)
     rownumber=range(0,len(rowtots))
- #   sandline = (np.where(rowtots == (max(rowtots))))[0][0]
- #   sandmax = (np.where(rowtots >=2))[-1][-1] #
-
- #   sand_distance = sandmax - sandline
- #   print('peak: ', sandline)
- #   print('maximum: ', sandmax)
- #   print('Maximum sand travel distance: ', sand_distance)
-
-    print('portion of sand: ', float(np.size(np.where(class0==1)[0]))/np.size(class1))
-    print('portion of not sand: ', float(np.size(np.where(class0==0)[0]))/np.size(class1))
+ 
+    print('portion of pixels with dye: ', float(np.size(np.where(class0==1)[0]))/np.size(class1))
+    print('portion of no dye: ', float(np.size(np.where(class0==0)[0]))/np.size(class1))
 
     plt.figure(1)
     plt.imshow(class0, cmap='Greys')
-#    plt.figure(2)
-#    plt.imshow(im3)
     plt.show()
 
     rep='d'
@@ -379,15 +348,15 @@ while grnz:
         rep=input("Repeat classification (y/n): ")
     if rep != 'y': grnz=False
 
-print('portion of sand: ', float(np.size(np.where(class0==1)[0]))/np.size(class1))
-print('portion of not sand: ', float(np.size(np.where(class0==0)[0]))/np.size(class1))
+print('portion of dye: ', float(np.size(np.where(class0==1)[0]))/np.size(class1))
+print('portion of no dye: ', float(np.size(np.where(class0==0)[0]))/np.size(class1))
 
 
 # safe classified image
 plt.imsave(bild_03,class0, cmap='Greys')
 
 ###############################################################################
-# extracting the amount of pixels with sand per image line & column
+# extracting the number of pixels with dye per image line & column
 ###############################################################################
 
 #rows
@@ -398,44 +367,6 @@ rownumber=range(0,len(rowtots))
 columntots=class0.sum(axis=0)
 columnumber=range(0,len(columntots))
 
-###############################################################################
-# plotting the sand density curve (histogram)
-###############################################################################
-
-#rows
-# fig_y=plt.figure()
-# plt.plot(rowtots, rownumber, color='green')
-# plt.title('vertical sand density curve ' + datei)
-# plt.xlabel('number of pixels classified')
-# plt.ylabel('pixel on y-axis')
-# ax = plt.gca()
-# ax.invert_yaxis()
-# #plt.xlim(-2,30)
-# plt.show()
-#fig_y.savefig(density_y)
-
-#columns
-#fig_x=plt.figure()
-#plt.plot(columnumber, columntots, color='green')
-#plt.title('horizontal sand density curve ' + datei)
-#plt.xlabel('pixel on x-axis')
-#plt.ylabel('number of pixels classified')
-#ax = plt.gca()
-#ax.invert_yaxis()
-#plt.show()
-##fig_x.savefig(density_x)
-
-###############################################################################
-#calculating the maximum travel distance of the sand
-###############################################################################
-
-# sandline = (np.where(rowtots == (max(rowtots))))[0][0]
-# sandmax = (np.where(rowtots >=2))[-1][-1] #
-# #sandmax = (np.where(rowtots != 0))[-1][-1] # checking for not equal to zero
-#
-# sand_distance = sandmax - sandline
-# print('Maximum sand travel distance: ', sand_distance)
-
 
 ###############################################################################
 #storing data
@@ -444,11 +375,11 @@ columnumber=range(0,len(columntots))
 # save rowtots
 np.savetxt(data_rowtots, rowtots, fmt='%i')
 
-# save entered values for sand classification
+# save entered values for dye classification
 classification = np.array([t1a,t2a,t3a,t4a])
 np.savetxt(classification_values,classification, fmt='%s')
 
-#save complete sand matrix
+# save complete dye matrix
 classy=class0
 np.savetxt(data_matrix, classy, fmt='%i')
 
