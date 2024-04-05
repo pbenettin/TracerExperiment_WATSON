@@ -8,6 +8,7 @@ This repository includes tracer data from a multi-tracer experiment carried out 
 
 These tracer data were collected during a training school on isotopic tracer and labelling experiments, organized as part of the COST Action WATSON. The training school took place near Florence, Italy, between 12-14 September 2023.
 
+Please cite as: Benettin, P., van Meerveld, I., Sprenger, M., & Penna, D. (2024). WATSON Soil Tracer Experiment Data (v1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.10931310
 
 ## Experiment Design and Chronology
 
